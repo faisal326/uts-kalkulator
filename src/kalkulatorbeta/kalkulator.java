@@ -10,10 +10,9 @@ package kalkulatorbeta;
  * @author hp
  */
 public class kalkulator extends javax.swing.JFrame {
-
-   String angka;
-   Double jumlah, angka1, angka2;
-   int pilih;
+String angka;
+int jumlah, bil1, bil2, pilih;
+  
     public kalkulator() {
         initComponents();
     }
@@ -49,7 +48,18 @@ public class kalkulator extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        txttampil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttampilActionPerformed(evt);
+            }
+        });
+
         btn1.setText("1");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1ActionPerformed(evt);
+            }
+        });
 
         btn2.setText("2");
         btn2.addActionListener(new java.awt.event.ActionListener() {
@@ -181,6 +191,15 @@ public class kalkulator extends javax.swing.JFrame {
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+    
+    
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void txttampilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttampilActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttampilActionPerformed
 
     /**
      * @param args the command line arguments
