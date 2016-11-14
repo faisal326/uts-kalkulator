@@ -75,6 +75,12 @@ int jumlah, bil1, bil2, pilih;
                 angka = Integer.toString(jumlah)
                 txttampil.setText(angka);
                 break;
+            case 3 : 
+                bil2 = Integer.parseInt(angka);
+                jumlah = bil1/bil2;
+                angka = Integer.toString(jumlah)
+                txttampil.setText(angka);
+                break;
         }
     }
 
