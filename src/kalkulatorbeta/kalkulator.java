@@ -89,6 +89,30 @@ int jumlah, bil1, bil2, pilih;
                 break;
         }
     }
+    void tambah(){
+        bil1 = Integer.parseInt(angka);
+        txttampil.setText("+");
+        angka = "";
+        pilih= 1;   
+    }
+     void kurang(){
+        bil1 = Integer.parseInt(angka);
+        txttampil.setText("-");
+        angka = "";
+        pilih= 2;   
+    }
+      void bagi(){
+        bil1 = Integer.parseInt(angka);
+        txttampil.setText("/");
+        angka = "";
+        pilih= 3;   
+    }
+       void kali(){
+        bil1 = Integer.parseInt(angka);
+        txttampil.setText("*");
+        angka = "";
+        pilih= 4;   
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -166,6 +190,11 @@ int jumlah, bil1, bil2, pilih;
         btnkoma.setText(".");
 
         btnclear.setText("C");
+        btnclear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnclearActionPerformed(evt);
+            }
+        });
 
         btnbagi.setText("/");
 
@@ -273,6 +302,14 @@ int jumlah, bil1, bil2, pilih;
     private void txttampilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttampilActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txttampilActionPerformed
+
+    private void btnclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnclearActionPerformed
+    txttampil.setText("");
+    bil1= (int) 0.0;
+    bil2= (int) 0.0;
+    jumlah= (int) 0.0;
+    angka= ("");
+    }//GEN-LAST:event_btnclearActionPerformed
 
     /**
      * @param args the command line arguments
