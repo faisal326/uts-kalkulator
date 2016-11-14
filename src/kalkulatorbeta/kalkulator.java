@@ -66,25 +66,25 @@ int jumlah, bil1, bil2, pilih;
             case 1 : 
                 bil2 = Integer.parseInt(angka);
                 jumlah = bil1+bil2;
-                angka = Integer.toString(jumlah)
+                angka = Integer.toString(jumlah);
                 txttampil.setText(angka);
                 break;
             case 2 : 
                 bil2 = Integer.parseInt(angka);
                 jumlah = bil1-bil2;
-                angka = Integer.toString(jumlah)
+                angka = Integer.toString(jumlah);
                 txttampil.setText(angka);
                 break;
             case 3 : 
                 bil2 = Integer.parseInt(angka);
                 jumlah = bil1/bil2;
-                angka = Integer.toString(jumlah)
+                angka = Integer.toString(jumlah);
                 txttampil.setText(angka);
                 break;
             case 4 : 
                 bil2 = Integer.parseInt(angka);
                 jumlah = bil1*bil2;
-                angka = Integer.toString(jumlah)
+                angka = Integer.toString(jumlah);
                 txttampil.setText(angka);
                 break;
         }
@@ -166,28 +166,88 @@ int jumlah, bil1, bil2, pilih;
         });
 
         btn3.setText("3");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
 
         btntambah.setText("+");
+        btntambah.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btntambahActionPerformed(evt);
+            }
+        });
 
         btn4.setText("4");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
 
         btn5.setText("5");
+        btn5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn5ActionPerformed(evt);
+            }
+        });
 
         btn6.setText("6");
+        btn6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn6ActionPerformed(evt);
+            }
+        });
 
         btnkurang.setText("-");
+        btnkurang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkurangActionPerformed(evt);
+            }
+        });
 
         btn7.setText("7");
+        btn7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn7ActionPerformed(evt);
+            }
+        });
 
         btn8.setText("8");
+        btn8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn8ActionPerformed(evt);
+            }
+        });
 
         btn9.setText("9");
+        btn9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn9ActionPerformed(evt);
+            }
+        });
 
         btnkali.setText("*");
+        btnkali.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkaliActionPerformed(evt);
+            }
+        });
 
         btn0.setText("0");
+        btn0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn0ActionPerformed(evt);
+            }
+        });
 
         btnkoma.setText(".");
+        btnkoma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnkomaActionPerformed(evt);
+            }
+        });
 
         btnclear.setText("C");
         btnclear.addActionListener(new java.awt.event.ActionListener() {
@@ -197,10 +257,20 @@ int jumlah, bil1, bil2, pilih;
         });
 
         btnbagi.setText("/");
+        btnbagi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbagiActionPerformed(evt);
+            }
+        });
 
         btnpone.setText("+/-");
 
         btnhasil.setText("=");
+        btnhasil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnhasilActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -291,11 +361,11 @@ int jumlah, bil1, bil2, pilih;
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-        // TODO add your handling code here:
+    angka2();
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-    
+    angka1();
     
     }//GEN-LAST:event_btn1ActionPerformed
 
@@ -310,6 +380,62 @@ int jumlah, bil1, bil2, pilih;
     jumlah= (int) 0.0;
     angka= ("");
     }//GEN-LAST:event_btnclearActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+    angka3();
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+    angka4();
+    }//GEN-LAST:event_btn4ActionPerformed
+
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+    angka5();
+    }//GEN-LAST:event_btn5ActionPerformed
+
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+    angka6();
+    }//GEN-LAST:event_btn6ActionPerformed
+
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+    angka7();
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+    angka8();
+    }//GEN-LAST:event_btn8ActionPerformed
+
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+    angka9();
+    }//GEN-LAST:event_btn9ActionPerformed
+
+    private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+    angka0();
+    }//GEN-LAST:event_btn0ActionPerformed
+
+    private void btnhasilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnhasilActionPerformed
+    hasil();
+    }//GEN-LAST:event_btnhasilActionPerformed
+
+    private void btntambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btntambahActionPerformed
+    tambah();
+    }//GEN-LAST:event_btntambahActionPerformed
+
+    private void btnkurangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkurangActionPerformed
+    kurang();
+    }//GEN-LAST:event_btnkurangActionPerformed
+
+    private void btnkaliActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkaliActionPerformed
+    kali();
+    }//GEN-LAST:event_btnkaliActionPerformed
+
+    private void btnbagiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbagiActionPerformed
+    bagi();
+    }//GEN-LAST:event_btnbagiActionPerformed
+
+    private void btnkomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkomaActionPerformed
+    koma();
+    }//GEN-LAST:event_btnkomaActionPerformed
 
     /**
      * @param args the command line arguments
