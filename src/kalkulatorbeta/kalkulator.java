@@ -15,7 +15,53 @@ int jumlah, bil1, bil2, pilih;
   
     public kalkulator() {
         initComponents();
+        angka="";
     }
+    void angka1 (){
+        angka +="1";
+        txttampil.setText(angka);
+    }
+    void angka2 (){
+        angka +="2";
+        txttampil.setText(angka);
+    }
+    void angka3 (){
+        angka +="3";
+        txttampil.setText(angka);
+    }
+    void angka4 (){
+        angka +="4";
+        txttampil.setText(angka);
+    }
+    void angka5 (){
+        angka +="5";
+        txttampil.setText(angka);
+    }
+    void angka6 (){
+        angka +="6";
+        txttampil.setText(angka);
+    }
+    void angka7 (){
+        angka +="7";
+        txttampil.setText(angka);
+    }
+    void angka8 (){
+        angka +="8";
+        txttampil.setText(angka);
+    }
+    void angka9 (){
+        angka +="9";
+        txttampil.setText(angka);
+    }
+    void angka0 (){
+        angka +="0";
+        txttampil.setText(angka);
+    }
+    void koma (){
+        angka +=".";
+        txttampil.setText(angka);
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -90,7 +136,7 @@ int jumlah, bil1, bil2, pilih;
 
         btn0.setText("0");
 
-        btnkoma.setText(",");
+        btnkoma.setText(".");
 
         btnclear.setText("C");
 
